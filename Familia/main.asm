@@ -33,14 +33,16 @@ loop:
 	lb $t3,($t1)  #load a byte from each string
 	lb $t4,($t8)
 	beqz $t3,checkt2 #str1 end
-	beqz $t4,missmatch
+	beqz $t4,mismatch
 	slt $t5,$t3,$t4  #compare two bytes
-	bnez $t5,missmatch
+	bnez $t5,mismatch
+	sgt $t5,$t3,$t4  #compare two bytes
+	bnez $t5,mismatch
 	addi $t1,$t1,1  #t1 points to the next byte of str1
 	addi $t8,$t8,1
 	j loop
 	
-missmatch: 
+mismatch: 
 	li $s0,1
 	j endfunction
 checkt2:
