@@ -4,5 +4,4 @@ Trabalho desenvolvido ao longo da matéria de Arquitetura e Organização de Com
 
 Campus: São José dos Campos  
 
-## Docente: Profº.Dr.Fábio Augusto Cappabianco
-##          Profº.Dr.Sérgio Ronaldo Barros dos Santos 
+## Docentes: Profº.Dr.Fábio Augusto Cappabianco e Profº.Dr.Sérgio Ronaldo Barros dos Santos 
